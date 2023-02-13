@@ -14,7 +14,8 @@ export function mulFn(a, b) {
 export function divFn(a, b) {
     return a / b;
 }
-function exampleFn(){
+
+function exampleFn() {
     console.log("example Fn");
 }
 // named export variation.
@@ -29,6 +30,10 @@ function calc(operation, a, b) {
         default: return 'invalid operation';
     }
 }
+
+/* IMPORTANT NOTE: THERE SHOULD BE ONLY 1 DEFAULT EXPORT IN A FILE.
+    AN INDIVIDUAL FILE IS TREATED AS AN INDIVIDUAL MODULE.
+*/
 
 // Default export 
 export default calc;
